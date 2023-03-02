@@ -1,0 +1,148 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body { 
+  background: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  text-align: left;
+}
+
+li {
+  float: left;
+}
+
+.logo-imagen {
+  display: inline-block;
+  height: 55px;
+  width: 246px;
+}
+
+.navegacion {
+  position: relative;
+  background: #aef000;
+  background-image: linear-gradient(bottom, #aef000 7%, #aef000 100%);
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #0E0E0E;
+  box-shadow: 2px 2px 3px #888;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+ul:after {
+  clear: both;
+}
+
+.navegacion-logo {
+  padding-top: 20px;
+}
+
+ul:before,
+ul:after {
+    content: " ";
+    display: table;
+}
+
+ul.menu-elementos li a {
+  display: block;
+  padding: 20px 30px;
+  border-right: 1px solid #3D3D3D;
+}
+
+ul.menu-elementos li:last-child a {
+  border-right: none;
+}
+
+ul.menu-elementos li a:hover {
+  color: #000;
+}
+
+ul.elemento-submenu {
+  position: absolute;
+  z-index: 200;
+  box-shadow: 2px 2px 0 #BEBEBE;
+  width: max-content;
+  display: none;
+}
+
+ul.elemento-submenu li {
+  float: none;
+  padding-right: 30px;
+}
+
+ul.elemento-submenu li:last-child {
+  padding-bottom: 15px;
+}
+
+ul.elemento-submenu li a {
+  border-bottom: 1px dotted #ccc;
+  border-right: none;
+  color: #000;
+  padding: 5px 10px;
+}
+
+ul.elemento-submenu li:last-child a {
+  border-bottom: none;
+}
+
+ul.elemento-submenu li a:hover {
+  color: #000;
+  background: #eeeeee;
+}
+
+.desplegar {
+  width: 100%;
+  display: inline-block;
+  box-shadow: 0 0 70px #fff;
+  margin-top: 0px;
+}
+
+ul.menu-elementos li:hover ul {
+  display: block;
+  background: #fff;
+}
+
+ul.menu-elementos li:hover a {
+  background: #c3ff25;
+  color: #666;
+  text-shadow: none;
+}
+
+ul.menu-elementos li:hover > a {
+  color: #000;
+} 
+
+.navegacion-menu {
+  display: flex;
+  justify-content: start;
+  margin: 0;
+}
+
+.titulo {
+  color: #00aef0;
+  display: block;
+  font-family: "freight_sansbold", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  margin: 30px 0 10px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  text-align: left;
+}
